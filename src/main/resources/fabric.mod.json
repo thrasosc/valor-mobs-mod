@@ -3,7 +3,7 @@
   "id": "valor_mobs",
   "version": "${version}",
   "name": "Valor Mobs",
-  "description": "",
+  "description": "Custom mobs for the Valor modpack",
   "authors": [],
   "contact": {},
   "license": "GPL-3.0",
