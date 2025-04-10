@@ -15,7 +15,7 @@ public class AnimationDispatcher {
       AzCommand.create("base_controller", "run", AzPlayBehaviors.LOOP);
 
   private static final AzCommand ATTACK_COMMAND =
-      AzCommand.create("attack_controller", "attack", AzPlayBehaviors.PLAY_ONCE);
+      AzCommand.create("base_controller", "attack", AzPlayBehaviors.PLAY_ONCE);
 
   private final Entity animatedEntity;
 
