@@ -16,23 +16,6 @@ public class Executioner extends HardMonster {
   }
 
   @Override
-  public void tick() {
-    super.tick();
-    moveAnalysis.update();
-
-    if (this.level().isClientSide) {
-      var isMovingOnGround = moveAnalysis.isMovingHorizontally() && onGround();
-      Runnable animationRunner;
-      if (isMovingOnGround) {
-        animationRunner = animationDispatcher::walk;
-      } else {
-        animationRunner = animationDispatcher::idle;
-      }
-      animationRunner.run();
-    }
-  }
-
-  @Override
   protected SoundEvent getAmbientSound() {
     playSound(SoundEvents.SKELETON_AMBIENT, 1.0f, 0.5f);
     return null;
