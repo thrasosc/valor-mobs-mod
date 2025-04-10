@@ -41,6 +41,7 @@ public class SphinxAnimator extends AzEntityAnimator<Sphinx> {
                           }
                         })
                     .build())
+            .setTransitionLength(10)
             .build());
   }
 

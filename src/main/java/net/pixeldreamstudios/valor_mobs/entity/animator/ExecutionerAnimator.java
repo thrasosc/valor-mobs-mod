@@ -41,6 +41,7 @@ public class ExecutionerAnimator extends AzEntityAnimator<Executioner> {
                           }
                         })
                     .build())
+            .setTransitionLength(10)
             .build());
   }
 
