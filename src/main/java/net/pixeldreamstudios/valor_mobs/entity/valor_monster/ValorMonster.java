@@ -13,7 +13,7 @@ public abstract class ValorMonster extends Monster {
   public final AnimationDispatcher animationDispatcher;
   public final MoveAnalysis moveAnalysis;
 
-  protected ValorMonster(EntityType<? extends Monster> entityType, Level level) {
+  public ValorMonster(EntityType<? extends Monster> entityType, Level level) {
     super(entityType, level);
     this.animationDispatcher = new AnimationDispatcher(this);
     this.moveAnalysis = new MoveAnalysis(this);

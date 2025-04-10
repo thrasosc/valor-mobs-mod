@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.ValorMonster;
 
 public abstract class EasyMonster extends ValorMonster {
-  protected EasyMonster(EntityType<? extends Monster> entityType, Level level) {
+  public EasyMonster(EntityType<? extends Monster> entityType, Level level) {
     super(entityType, level);
     this.xpReward = Enemy.XP_REWARD_SMALL;
   }
