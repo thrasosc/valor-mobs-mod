@@ -1,6 +1,7 @@
 package net.pixeldreamstudios.valor_mobs.entity.valor_monster;
 
 import mod.azure.azurelib.rewrite.util.MoveAnalysis;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -17,6 +18,30 @@ public abstract class ValorMonster extends Monster {
     super(entityType, level);
     this.animationDispatcher = new AnimationDispatcher(this);
     this.moveAnalysis = new MoveAnalysis(this);
+  }
+
+  @Override
+  public void tick() {
+    super.tick();
+    moveAnalysis.update();
+
+    if (this.level().isClientSide) {
+      var isMovingOnGround = moveAnalysis.isMovingHorizontally() && onGround();
+      Runnable animationRunner;
+      if (isMovingOnGround) {
+        animationRunner = animationDispatcher::walk;
+      } else {
+        animationRunner = animationDispatcher::idle;
+      }
+      animationRunner.run();
+    }
+  }
+
+  @Override
+  public boolean doHurtTarget(Entity entity) {
+    Runnable animationRunner = animationDispatcher::attack;
+    animationRunner.run();
+    return super.doHurtTarget(entity);
   }
 
   @Override
