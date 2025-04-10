@@ -15,23 +15,6 @@ public class Sphinx extends NormalMonster {
   }
 
   @Override
-  public void tick() {
-    super.tick();
-    moveAnalysis.update();
-
-    if (this.level().isClientSide) {
-      var isMovingOnGround = moveAnalysis.isMovingHorizontally() && onGround();
-      Runnable animationRunner;
-      if (isMovingOnGround) {
-        animationRunner = animationDispatcher::walk;
-      } else {
-        animationRunner = animationDispatcher::idle;
-      }
-      animationRunner.run();
-    }
-  }
-
-  @Override
   protected SoundEvent getAmbientSound() {
     playSound(SoundEvents.GHAST_AMBIENT, 1.0f, 0.25f);
     return null;
