@@ -1,5 +1,6 @@
 package net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal;
 
+import mod.azure.azurelib.common.api.common.ai.pathing.AzureNavigation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -10,6 +11,7 @@ import net.minecraft.world.level.Level;
 public class Sphinx extends NormalMonster {
   public Sphinx(EntityType<? extends Monster> entityType, Level level) {
     super(entityType, level);
+    this.navigation = new AzureNavigation(this, level);
   }
 
   @Override
