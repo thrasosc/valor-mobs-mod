@@ -13,7 +13,7 @@ import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.Sphinx;
 
 public class EntityTypeRegistry {
   public static final EntityType<Executioner> EXECUTIONER =
-      register(Executioner::new, "executioner", 2, 3);
+      register(Executioner::new, "executioner", 1.25F, 3);
   public static final EntityType<Sphinx> SPHINX = register(Sphinx::new, "sphinx", 2, 2);
 
   public static <T extends Entity> EntityType<T> register(
