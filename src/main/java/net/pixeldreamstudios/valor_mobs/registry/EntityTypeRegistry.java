@@ -10,10 +10,13 @@ import net.minecraft.world.entity.MobCategory;
 import net.pixeldreamstudios.valor_mobs.ValorMobs;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.Executioner;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.HardMonster;
+import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.NormalMonster;
+import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.Sphinx;
 
 public class EntityTypeRegistry {
   public static final EntityType<Executioner> EXECUTIONER =
       register(Executioner::new, "executioner", 2, 3);
+  public static final EntityType<Sphinx> SPHINX = register(Sphinx::new, "sphinx", 2, 2);
 
   public static <T extends Entity> EntityType<T> register(
       EntityType.EntityFactory<T> factory, String id, float width, float height) {
@@ -30,6 +33,7 @@ public class EntityTypeRegistry {
   public static void init() {
     ValorMobs.LOGGER.info("Registering entities");
 
-    FabricDefaultAttributeRegistry.register(EXECUTIONER, HardMonster.createMobAttributes());
+    FabricDefaultAttributeRegistry.register(EXECUTIONER, HardMonster.createAttributes());
+    FabricDefaultAttributeRegistry.register(SPHINX, NormalMonster.createAttributes());
   }
 }

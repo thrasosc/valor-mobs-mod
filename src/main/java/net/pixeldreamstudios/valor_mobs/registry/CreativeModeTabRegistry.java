@@ -31,6 +31,7 @@ public class CreativeModeTabRegistry {
         .register(
             creativeModeTab -> {
               creativeModeTab.accept(ItemRegistry.EXECUTIONER_SPAWN_EGG);
+              creativeModeTab.accept(ItemRegistry.SPHINX_SPAWN_EGG);
             });
   }
 }
