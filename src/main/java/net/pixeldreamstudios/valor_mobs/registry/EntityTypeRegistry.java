@@ -9,8 +9,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.pixeldreamstudios.valor_mobs.ValorMobs;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.Executioner;
-import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.HardMonster;
-import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.NormalMonster;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.Sphinx;
 
 public class EntityTypeRegistry {
@@ -33,7 +31,7 @@ public class EntityTypeRegistry {
   public static void init() {
     ValorMobs.LOGGER.info("Registering entities");
 
-    FabricDefaultAttributeRegistry.register(EXECUTIONER, HardMonster.createAttributes());
-    FabricDefaultAttributeRegistry.register(SPHINX, NormalMonster.createAttributes());
+    FabricDefaultAttributeRegistry.register(EXECUTIONER, Executioner.createAttributes());
+    FabricDefaultAttributeRegistry.register(SPHINX, Sphinx.createAttributes());
   }
 }
