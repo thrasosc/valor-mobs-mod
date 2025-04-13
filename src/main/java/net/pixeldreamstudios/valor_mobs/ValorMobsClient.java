@@ -13,12 +13,10 @@ public class ValorMobsClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
     EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.EXECUTIONER, (context) -> new ExecutionerRenderer(context));
+        EntityTypeRegistry.EXECUTIONER, ExecutionerRenderer::new);
+    EntityRendererRegistry.INSTANCE.register(EntityTypeRegistry.SPHINX, SphinxRenderer::new);
+    EntityRendererRegistry.INSTANCE.register(EntityTypeRegistry.MUMMY, MummyRenderer::new);
     EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.SPHINX, (context) -> new SphinxRenderer(context));
-    EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.MUMMY, (context) -> new MummyRenderer(context));
-    EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.AZTEC_WARRIOR, (context) -> new AztecWarriorRenderer(context));
+        EntityTypeRegistry.AZTEC_WARRIOR, AztecWarriorRenderer::new);
   }
 }
