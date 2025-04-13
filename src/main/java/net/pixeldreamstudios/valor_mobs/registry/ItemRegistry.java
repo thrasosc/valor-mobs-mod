@@ -17,6 +17,10 @@ public class ItemRegistry {
       register(
           new SpawnEggItem(EntityTypeRegistry.SPHINX, 0xC6A779, 0x402F21, new Item.Properties()),
           "sphinx_spawn_egg");
+  public static final Item MUMMY_SPAWN_EGG =
+      register(
+          new SpawnEggItem(EntityTypeRegistry.MUMMY, 0x655B4E, 0x69584A, new Item.Properties()),
+          "mummy_spawn_egg");
 
   public static Item register(Item item, String id) {
     ResourceLocation itemID = ResourceLocation.fromNamespaceAndPath(ValorMobs.MOD_ID, id);
