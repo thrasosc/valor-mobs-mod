@@ -32,10 +32,10 @@ public class MummyAnimator extends AzEntityAnimator<Mummy> {
                                     event.getAnimatable().getX(),
                                     event.getAnimatable().getY(),
                                     event.getAnimatable().getZ(),
-                                    SoundEvents.SKELETON_STEP,
+                                    SoundEvents.HUSK_STEP,
                                     SoundSource.HOSTILE,
                                     1.0F, // volume
-                                    0.5F, // pitch
+                                    0.75F, // pitch
                                     true // should have distance delay
                                     );
                           }
