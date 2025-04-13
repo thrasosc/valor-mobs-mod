@@ -14,19 +14,19 @@ public class Mummy extends EasyMonster {
 
   @Override
   protected SoundEvent getAmbientSound() {
-    playSound(SoundEvents.HUSK_AMBIENT, 1.0f, 0.75f);
+    playSound(SoundEvents.HUSK_AMBIENT, 1.0f, 1.0f);
     return null;
   }
 
   @Override
   protected SoundEvent getHurtSound(DamageSource source) {
-    playSound(SoundEvents.HUSK_HURT, 1.0f, 0.75f);
+    playSound(SoundEvents.HUSK_HURT, 1.0f, 1.0f);
     return null;
   }
 
   @Override
   protected SoundEvent getDeathSound() {
-    playSound(SoundEvents.HUSK_DEATH, 1.0f, 0.75f);
+    playSound(SoundEvents.HUSK_DEATH, 1.0f, 1.0f);
     return null;
   }
 }
