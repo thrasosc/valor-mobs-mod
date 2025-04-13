@@ -46,7 +46,7 @@ public class SphinxAnimator extends AzEntityAnimator<Sphinx> {
   }
 
   @Override
-  public @NotNull ResourceLocation getAnimationLocation(Sphinx executioner) {
+  public @NotNull ResourceLocation getAnimationLocation(Sphinx sphinx) {
     return ANIMATIONS;
   }
 }
