@@ -2,6 +2,7 @@ package net.pixeldreamstudios.valor_mobs;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
+import net.pixeldreamstudios.valor_mobs.entity.client.renderer.AztecWarriorRenderer;
 import net.pixeldreamstudios.valor_mobs.entity.client.renderer.ExecutionerRenderer;
 import net.pixeldreamstudios.valor_mobs.entity.client.renderer.MummyRenderer;
 import net.pixeldreamstudios.valor_mobs.entity.client.renderer.SphinxRenderer;
@@ -17,5 +18,7 @@ public class ValorMobsClient implements ClientModInitializer {
         EntityTypeRegistry.SPHINX, (context) -> new SphinxRenderer(context));
     EntityRendererRegistry.INSTANCE.register(
         EntityTypeRegistry.MUMMY, (context) -> new MummyRenderer(context));
+    EntityRendererRegistry.INSTANCE.register(
+        EntityTypeRegistry.AZTEC_WARRIOR, (context) -> new AztecWarriorRenderer(context));
   }
 }

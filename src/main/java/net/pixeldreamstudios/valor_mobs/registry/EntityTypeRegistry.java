@@ -8,6 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.pixeldreamstudios.valor_mobs.ValorMobs;
+import net.pixeldreamstudios.valor_mobs.entity.valor_monster.easy.AztecWarrior;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.easy.Mummy;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.Executioner;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.Sphinx;
@@ -17,6 +18,8 @@ public class EntityTypeRegistry {
       register(Executioner::new, "executioner", 1.25F, 3);
   public static final EntityType<Sphinx> SPHINX = register(Sphinx::new, "sphinx", 2, 2);
   public static final EntityType<Mummy> MUMMY = register(Mummy::new, "mummy", 1, 2);
+  public static final EntityType<AztecWarrior> AZTEC_WARRIOR =
+      register(AztecWarrior::new, "aztec_warrior", 1, 2);
 
   public static <T extends Entity> EntityType<T> register(
       EntityType.EntityFactory<T> factory, String id, float width, float height) {
@@ -36,5 +39,6 @@ public class EntityTypeRegistry {
     FabricDefaultAttributeRegistry.register(EXECUTIONER, Executioner.createAttributes());
     FabricDefaultAttributeRegistry.register(SPHINX, Sphinx.createAttributes());
     FabricDefaultAttributeRegistry.register(MUMMY, Sphinx.createAttributes());
+    FabricDefaultAttributeRegistry.register(AZTEC_WARRIOR, Sphinx.createAttributes());
   }
 }
