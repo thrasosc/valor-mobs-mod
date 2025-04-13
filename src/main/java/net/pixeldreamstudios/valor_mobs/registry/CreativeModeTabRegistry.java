@@ -34,6 +34,7 @@ public class CreativeModeTabRegistry {
               creativeModeTab.accept(ItemRegistry.SPHINX_SPAWN_EGG);
               creativeModeTab.accept(ItemRegistry.MUMMY_SPAWN_EGG);
               creativeModeTab.accept(ItemRegistry.AZTEC_WARRIOR_SPAWN_EGG);
+              creativeModeTab.accept(ItemRegistry.JAGUAR_WARRIOR_SPAWN_EGG);
             });
   }
 }

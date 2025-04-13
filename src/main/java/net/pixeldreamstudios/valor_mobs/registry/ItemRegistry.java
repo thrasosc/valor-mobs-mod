@@ -26,6 +26,11 @@ public class ItemRegistry {
           new SpawnEggItem(
               EntityTypeRegistry.AZTEC_WARRIOR, 0xD5E2D1, 0x5A956A, new Item.Properties()),
           "aztec_warrior_spawn_egg");
+  public static final Item JAGUAR_WARRIOR_SPAWN_EGG =
+      register(
+          new SpawnEggItem(
+              EntityTypeRegistry.JAGUAR_WARRIOR, 0xD8AE56, 0x5D411D, new Item.Properties()),
+          "jaguar_warrior_spawn_egg");
 
   public static Item register(Item item, String id) {
     ResourceLocation itemID = ResourceLocation.fromNamespaceAndPath(ValorMobs.MOD_ID, id);
