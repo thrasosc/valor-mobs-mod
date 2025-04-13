@@ -11,14 +11,8 @@ public class ValorMobsClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
     EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.EXECUTIONER,
-        (context) -> {
-          return new ExecutionerRenderer(context);
-        });
+        EntityTypeRegistry.EXECUTIONER, (context) -> new ExecutionerRenderer(context));
     EntityRendererRegistry.INSTANCE.register(
-        EntityTypeRegistry.SPHINX,
-        (context) -> {
-          return new SphinxRenderer(context);
-        });
+        EntityTypeRegistry.SPHINX, (context) -> new SphinxRenderer(context));
   }
 }
