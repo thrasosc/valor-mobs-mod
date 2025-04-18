@@ -17,5 +17,7 @@ public class ValorMobsClient implements ClientModInitializer {
         EntityTypeRegistry.AZTEC_WARRIOR, AztecWarriorRenderer::new);
     EntityRendererRegistry.INSTANCE.register(
         EntityTypeRegistry.JAGUAR_WARRIOR, JaguarWarriorRenderer::new);
+    EntityRendererRegistry.INSTANCE.register(
+        EntityTypeRegistry.SET_SERVANT, SetServantRenderer::new);
   }
 }

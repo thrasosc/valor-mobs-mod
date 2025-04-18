@@ -17,6 +17,9 @@ public class AnimationDispatcher {
   private static final AzCommand ATTACK_COMMAND =
       AzCommand.create("base_controller", "attack", AzPlayBehaviors.PLAY_ONCE);
 
+  private static final AzCommand ATTACK_ALT_COMMAND =
+      AzCommand.create("base_controller", "attack_2", AzPlayBehaviors.PLAY_ONCE);
+
   private final Entity animatedEntity;
 
   public AnimationDispatcher(Entity animatable) {
@@ -33,5 +36,9 @@ public class AnimationDispatcher {
 
   public void attack() {
     ATTACK_COMMAND.sendForEntity(animatedEntity);
+  }
+
+  public void attackAlt() {
+    ATTACK_ALT_COMMAND.sendForEntity(animatedEntity);
   }
 }

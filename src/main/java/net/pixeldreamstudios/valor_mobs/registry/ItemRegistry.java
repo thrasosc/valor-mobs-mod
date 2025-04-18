@@ -31,6 +31,11 @@ public class ItemRegistry {
           new SpawnEggItem(
               EntityTypeRegistry.JAGUAR_WARRIOR, 0xD8AE56, 0x5D411D, new Item.Properties()),
           "jaguar_warrior_spawn_egg");
+  public static final Item SET_SERVANT_SPAWN_EGG =
+      register(
+          new SpawnEggItem(
+              EntityTypeRegistry.SET_SERVANT, 0x554A49, 0x8C3D28, new Item.Properties()),
+          "set_servant_spawn_egg");
 
   public static Item register(Item item, String id) {
     ResourceLocation itemID = ResourceLocation.fromNamespaceAndPath(ValorMobs.MOD_ID, id);

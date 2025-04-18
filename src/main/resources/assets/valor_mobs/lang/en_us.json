@@ -10,7 +10,7 @@
   "item.valor_mobs.aztec_warrior_spawn_egg": "Aztec Warrior Spawn Egg",
   "item.valor_mobs.eagle_warrior_spawn_egg": "Eagle Warrior Spawn Egg",
   "item.valor_mobs.jaguar_warrior_spawn_egg": "Jaguar Warrior Spawn Egg",
-  "item.valor_mobs.seth_spawn_egg": "Set Servant Spawn Egg",
+  "item.valor_mobs.set_servant_spawn_egg": "Set Servant Spawn Egg",
   "item.valor_mobs.sea_serpent_spawn_egg": "Sea Serpent Spawn Egg",
   "item.valor_mobs.sphinx_spawn_egg": "Sphinx Spawn Egg",
   "entity.valor_mobs.executioner": "Executioner",
@@ -18,7 +18,7 @@
   "entity.valor_mobs.eagle_warrior": "Eagle Warrior",
   "entity.valor_mobs.aztec_warrior": "Aztec Warrior",
   "entity.valor_mobs.jaguar_warrior": "Jaguar Warrior",
-  "entity.valor_mobs.seth": "Set Servant",
+  "entity.valor_mobs.set_servant": "Set Servant",
   "entity.valor_mobs.sea_serpent": "Sea Serpent",
   "entity.valor_mobs.sphinx": "Sphinx"
 }

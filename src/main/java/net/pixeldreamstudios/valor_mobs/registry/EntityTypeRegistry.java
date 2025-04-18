@@ -11,6 +11,7 @@ import net.pixeldreamstudios.valor_mobs.ValorMobs;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.easy.AztecWarrior;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.easy.Mummy;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.Executioner;
+import net.pixeldreamstudios.valor_mobs.entity.valor_monster.hard.SetServant;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.JaguarWarrior;
 import net.pixeldreamstudios.valor_mobs.entity.valor_monster.normal.Sphinx;
 
@@ -23,6 +24,8 @@ public class EntityTypeRegistry {
       register(AztecWarrior::new, "aztec_warrior", 1, 2);
   public static final EntityType<JaguarWarrior> JAGUAR_WARRIOR =
       register(JaguarWarrior::new, "jaguar_warrior", 1, 2);
+  public static final EntityType<SetServant> SET_SERVANT =
+      register(SetServant::new, "set_servant", 1.5F, 3.1F);
 
   public static <T extends Entity> EntityType<T> register(
       EntityType.EntityFactory<T> factory, String id, float width, float height) {
@@ -41,11 +44,9 @@ public class EntityTypeRegistry {
 
     FabricDefaultAttributeRegistry.register(EXECUTIONER, Executioner.createAttributes());
     FabricDefaultAttributeRegistry.register(SPHINX, Sphinx.createAttributes());
-    FabricDefaultAttributeRegistry.register(MUMMY, Sphinx.createAttributes());
-    FabricDefaultAttributeRegistry.register(AZTEC_WARRIOR, Sphinx.createAttributes());
-    FabricDefaultAttributeRegistry.register(JAGUAR_WARRIOR, Sphinx.createAttributes());
     FabricDefaultAttributeRegistry.register(MUMMY, Mummy.createAttributes());
     FabricDefaultAttributeRegistry.register(AZTEC_WARRIOR, AztecWarrior.createAttributes());
     FabricDefaultAttributeRegistry.register(JAGUAR_WARRIOR, JaguarWarrior.createAttributes());
+    FabricDefaultAttributeRegistry.register(SET_SERVANT, SetServant.createAttributes());
   }
 }
