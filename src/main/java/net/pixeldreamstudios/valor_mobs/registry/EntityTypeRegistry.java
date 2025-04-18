@@ -44,5 +44,8 @@ public class EntityTypeRegistry {
     FabricDefaultAttributeRegistry.register(MUMMY, Sphinx.createAttributes());
     FabricDefaultAttributeRegistry.register(AZTEC_WARRIOR, Sphinx.createAttributes());
     FabricDefaultAttributeRegistry.register(JAGUAR_WARRIOR, Sphinx.createAttributes());
+    FabricDefaultAttributeRegistry.register(MUMMY, Mummy.createAttributes());
+    FabricDefaultAttributeRegistry.register(AZTEC_WARRIOR, AztecWarrior.createAttributes());
+    FabricDefaultAttributeRegistry.register(JAGUAR_WARRIOR, JaguarWarrior.createAttributes());
   }
 }
