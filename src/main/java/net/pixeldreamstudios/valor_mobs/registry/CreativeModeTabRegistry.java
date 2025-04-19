@@ -36,6 +36,7 @@ public class CreativeModeTabRegistry {
               creativeModeTab.accept(ItemRegistry.AZTEC_WARRIOR_SPAWN_EGG);
               creativeModeTab.accept(ItemRegistry.JAGUAR_WARRIOR_SPAWN_EGG);
               creativeModeTab.accept(ItemRegistry.SET_SERVANT_SPAWN_EGG);
+              creativeModeTab.accept(ItemRegistry.EAGLE_WARRIOR_SPAWN_EGG);
             });
   }
 }
