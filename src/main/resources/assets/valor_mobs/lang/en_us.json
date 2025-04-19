@@ -1,10 +1,5 @@
 {
   "creative_mode_tab.valor_mobs": "Valor Mobs",
-  "text.autoconfig.valor_mobs.title": "Mythos Bestiary",
-  "text.autoconfig.valor_mobs.category.executioner": "Executioner",
-  "text.autoconfig.valor_mobs.option.executionerHealth": "Executioner Health",
-  "text.autoconfig.valor_mobs.option.executionerAttackDamage": "Executioner Attack Damage",
-  "text.autoconfig.valor_mobs.option.executionerSpawnWeight": "Executioner Spawn Weight",
   "item.valor_mobs.executioner_spawn_egg": "Executioner Spawn Egg",
   "item.valor_mobs.mummy_spawn_egg": "Mummy Spawn Egg",
   "item.valor_mobs.aztec_warrior_spawn_egg": "Aztec Warrior Spawn Egg",
